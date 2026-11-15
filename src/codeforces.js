@@ -15,11 +15,11 @@ async function getConstest() {
             console.log("Name: ", contest.name);
             console.log("ID: ", contest.id);
             console.log("Start: ",
-                new Date(constest.startTimeSeconds * 1000)
+                new Date(contest.startTimeSeconds * 1000)
                 .toLocaleString()
             );
             console.log("Duration: ",
-                constest.durationSeconds/3600, " hours"
+                contest.durationSeconds / 3600, " hours"
             );
             
         });
